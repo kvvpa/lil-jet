@@ -23,4 +23,32 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  newName: function (nameStatus) {
+    this.name = nameStatus;
+  },
+  newVolume: function (volumeStatus) {
+    this.volume = volumeStatus;
+  },
+  newColor: function (colorStatus) {
+    this.color = colorStatus;
+  },
+  newPocketNum: function (pocketNumStatus) {
+    this.pocketNum = pocketNumStatus;
+  }
 };
+
+// console.log("name before:", backpack.name);
+// backpack.newName("Baller Backpack");
+// console.log("name after:", backpack.name);
+
+// console.log("volume before:", backpack.volume);
+// backpack.newVolume(50);
+// console.log("volume after:", backpack.volume)
+
+// console.log("color before:", backpack.color);
+// backpack.newColor("orange");
+// console.log("color after:", backpack.color)
+
+console.log("pocketNum before:", backpack.pocketNum);
+backpack.newPocketNum(34);
+console.log("pocketNum after:", backpack.pocketNum);
